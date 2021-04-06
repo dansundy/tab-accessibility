@@ -1,0 +1,19 @@
+{
+  "name": "tab-accessibility",
+  "version": "0.0.0",
+  "description": "Reduced test cases for different tab layouts.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dansundy/tab-accessibility.git"
+  },
+  "author": "Daniel Sundy",
+  "bugs": {
+    "url": "https://github.com/dansundy/tab-accessibility/issues"
+  },
+  "homepage": "https://github.com/dansundy/tab-accessibility#readme"
+}
