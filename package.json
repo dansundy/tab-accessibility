@@ -5,7 +5,10 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run dev",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/dansundy/tab-accessibility/issues"
   },
-  "homepage": "https://github.com/dansundy/tab-accessibility#readme"
+  "homepage": "https://github.com/dansundy/tab-accessibility#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
 }
