@@ -5,9 +5,58 @@
     <title>Tab Accessibility</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <p>Hello world!</p>
+    <div class="wrapper">
+      <div class="tabs" style="visibility: visible">
+        <div role="tablist" aria-owns="tab-0-0 tab-0-1"></div>
+        <h3 class="tab-heading is-active">
+          <span
+            id="tab-0-0"
+            tabindex="0"
+            aria-controls="tab-panel-0-0"
+            class="tab"
+            role="tab"
+            aria-selected="true"
+            >First Tab</span
+          >
+        </h3>
+        <div
+          class="tab-panel is-active"
+          id="tab-panel-0-0"
+          tabindex="0"
+          aria-labelledby="tab-0-0"
+          role="tabpanel"
+        >
+          <div class="tpw-panel-inner">
+            <p>Content for panel 1</p>
+          </div>
+        </div>
+        <h3 class="tab-heading">
+          <span
+            id="tab-0-1"
+            tabindex="-1"
+            aria-controls="tab-panel-0-1"
+            class="tab"
+            role="tab"
+            >Second Tab</span
+          >
+        </h3>
+        <div
+          class="tab-panel"
+          id="tab-panel-0-1"
+          tabindex="0"
+          aria-labelledby="tab-0-1"
+          role="tabpanel"
+        >
+          <div class="tab-panel-inner">
+            <p>Content for the second tab.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
