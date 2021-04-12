@@ -7,56 +7,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
   </head>
 
   <body>
-    <div class="wrapper">
-      <div class="tabs" style="visibility: visible">
-        <div role="tablist" aria-owns="tab-0-0 tab-0-1"></div>
-        <h3 class="tab-heading is-active">
-          <span
-            id="tab-0-0"
+    <main>
+      <div class="wrapper">
+        <div class="tabs">
+          <div role="tablist" aria-owns="tab-1-0 tab-1-1"></div>
+          <h3 class="tab is-active" role="tab">
+            <span
+              id="tab-1-0"
+              tabindex="0"
+              aria-controls="tab-panel-1-0"
+              class="tab-trigger"
+              aria-selected="true"
+              >First Tab</span
+            >
+          </h3>
+          <div
+            class="tab-panel is-active"
+            id="tab-panel-1-0"
             tabindex="0"
-            aria-controls="tab-panel-0-0"
-            class="tab"
-            role="tab"
-            aria-selected="true"
-            >First Tab</span
+            aria-labelledby="tab-1-0"
+            role="tabpanel"
           >
-        </h3>
-        <div
-          class="tab-panel is-active"
-          id="tab-panel-0-0"
-          tabindex="0"
-          aria-labelledby="tab-0-0"
-          role="tabpanel"
-        >
-          <div class="tpw-panel-inner">
             <p>Content for panel 1</p>
           </div>
-        </div>
-        <h3 class="tab-heading">
-          <span
-            id="tab-0-1"
-            tabindex="-1"
-            aria-controls="tab-panel-0-1"
-            class="tab"
-            role="tab"
-            >Second Tab</span
+          <h3 class="tab">
+            <span
+              id="tab-1-1"
+              tabindex="-1"
+              aria-controls="tab-panel-1-1"
+              class="tab-trigger"
+              role="tab"
+              >Second Tab</span
+            >
+          </h3>
+          <div
+            class="tab-panel"
+            id="tab-panel-1-1"
+            tabindex="0"
+            aria-labelledby="tab-1-1"
+            role="tabpanel"
           >
-        </h3>
-        <div
-          class="tab-panel"
-          id="tab-panel-0-1"
-          tabindex="0"
-          aria-labelledby="tab-0-1"
-          role="tabpanel"
-        >
-          <div class="tab-panel-inner">
             <p>Content for the second tab.</p>
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="wrapper">
+        <div class="tabs" role="tablist">
+          <h3 class="tab is-active">
+            <span
+              id="tab-0-0"
+              tabindex="0"
+              aria-controls="tab-panel-0-0"
+              class="tab-trigger"
+              role="tab"
+              aria-selected="true"
+              >First Tab</span
+            >
+          </h3>
+          <div
+            class="tab-panel is-active"
+            id="tab-panel-0-0"
+            tabindex="0"
+            aria-labelledby="tab-0-0"
+            role="tabpanel"
+          >
+            <p>Content for panel 1</p>
+          </div>
+          <h3 class="tab">
+            <span
+              id="tab-0-1"
+              tabindex="-1"
+              aria-controls="tab-panel-0-1"
+              class="tab-trigger"
+              role="tab"
+              >Second Tab</span
+            >
+          </h3>
+          <div
+            class="tab-panel"
+            id="tab-panel-0-1"
+            tabindex="0"
+            aria-labelledby="tab-0-1"
+            role="tabpanel"
+          >
+            <p>Content for the second tab.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="tabs" role="tablist">
+          <button id="tab-2-0" class="tab tab-trigger is-active" role="tab" tabindex="0" aria-controls="tab-panel-2-0" aria-selected="true">
+            First Tab
+          </button>
+          <div
+            class="tab-panel is-active"
+            id="tab-panel-2-0"
+            tabindex="0"
+            aria-labelledby="tab-2-0"
+            role="tabpanel"
+          >
+            <p>Content for panel 1</p>
+          </div>
+          <button id="tab-2-1" class="tab tab-trigger" tabindex="-1" role="tab" aria-controls="tab-panel-2-1">
+            Second Tab
+          </button>
+          <div
+            class="tab-panel"
+            id="tab-panel-2-1"
+            tabindex="0"
+            aria-labelledby="tab-2-1"
+            role="tabpanel"
+          >
+            <p>Content for the second tab.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="wrapper">
+        <div class="tabs">
+          <div role="tablist" aria-owns="tab-3-0 tab-3-1"></div>
+          <button id="tab-3-0" class="tab tab-trigger is-active" role="tab" tabindex="0" aria-controls="tab-panel-3-0" aria-selected="true" aria-setsize="2" aria-posinset="1">
+            First Tab
+          </button>
+          <div
+            class="tab-panel is-active"
+            id="tab-panel-3-0"
+            tabindex="0"
+            aria-labelledby="tab-3-0"
+            role="tabpanel"
+          >
+            <p>Content for panel 1</p>
+          </div>
+          <button id="tab-3-1" class="tab tab-trigger" tabindex="-1" role="tab" aria-controls="tab-panel-3-1" aria-setsize="2" aria-posinset="2">
+            Second Tab
+          </button>
+          <div
+            class="tab-panel"
+            id="tab-panel-3-1"
+            tabindex="0"
+            aria-labelledby="tab-3-1"
+            role="tabpanel"
+          >
+            <p>Content for the second tab.</p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

@@ -1,15 +1,19 @@
+.wrapper {
+  margin: 40px auto;
+}
+
 .tabs {
   clear: both;
   display: flex;
   flex-wrap: wrap;
 }
 
-.tab-heading {
+.tab {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  border-color: #ccc;
+  background: none;
+  border-color: transparent;
   border-style: solid;
-  border-width: 0;
-
+  border-width: 1px;
   bottom: -1px;
   box-sizing: border-box;
   display: inline-block;
@@ -19,14 +23,16 @@
   white-space: nowrap;
   width: initial;
   z-index: 1;
+}
+
+.tab.is-active {
+  border-color: #ccc;
+  border-width: 1px;
   border-bottom-color: #fff;
 }
 
-.tab-heading.is-active {
-  border-width: 1px;
-}
-
-.tab {
+.tab-trigger {
+  cursor: pointer;
   padding: 10px 10px;
   display: inline-block;
 }
@@ -46,6 +52,7 @@
 }
 
 .tab-panel:not(.is-active) {
+  border: 0;
   height: 0 !important;
   visibility: hidden;
 }
